@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Contact from "./Contact";
 import { connect } from "react-redux";
-import {getContacts} from '../../actions/contactActions';
+import { getContacts } from "../../actions/contactActions";
 
 class Contacts extends Component {
   componentDidMount() {
@@ -27,4 +27,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, {getContacts})(Contacts);
+export default connect(mapStateToProps, { getContacts })(Contacts);
